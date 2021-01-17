@@ -28,7 +28,7 @@ function advence(){
     document.getElementById("game-place").style.display = "flex";
     g = move();
     var i = "img" + g;
-    document.getElementById(i).src = "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/o.png";
+    document.getElementById(i).src = "https://satyampgt4.github.io/tictactoe/img/o.png";
     
 }
 function back_restart(){
