@@ -13,8 +13,8 @@ function play(inpu) {
         if (w != 0) {
             alert(`Game over plese Start a new game`);
         }
-        else if (inpu.src == "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/n.png") {
-            inpu.src = "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/x.png";
+        else if (inpu.src == "https://satyampgt4.github.io/tictactoe/img/n.png") {
+            inpu.src = "https://satyampgt4.github.io/tictactoe/img/x.png";
             var f = inpu.id[3]
             board[f] = 1;
             n++;
@@ -33,7 +33,7 @@ function play(inpu) {
                     // console.log(g);
                     var i = "img" + g;
                     // console.log(i);
-                    document.getElementById(i).src = "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/o.png";
+                    document.getElementById(i).src = "https://satyampgt4.github.io/tictactoe/img/o.png";
                 }
                 setTimeout(result, 200);
                 
@@ -49,18 +49,18 @@ function play(inpu) {
             alert(`Game over plese Restart the game`);
         }
         // console.log(inpu.src);
-        else if (inpu.src == "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/n.png") {
+        else if (inpu.src == "https://satyampgt4.github.io/tictactoe/img/n.png") {
 
             var f = inpu.id[3]
 
             n++;
             if (mo == 1) {
-                inpu.src = "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/x.png";
+                inpu.src = "https://satyampgt4.github.io/tictactoe/img/x.png";
                 mo = -1;
                 board[f] = 1;
             }
             else {
-                inpu.src = "file:///C:/Users/Praveen/Desktop/New%20folder/tic/img/o.png";
+                inpu.src = "https://satyampgt4.github.io/tictactoe/img/o.png";
                 mo = 1;
                 board[f] = -1;
             }
