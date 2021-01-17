@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Tic Tac Toe
+    </title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\script.js"></script>
+    <script src="js\move.js"></script>
+    <script src="js\struct.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title-bar">
+        <div class="tit"><img src="img/1.png"></div>
+        <div class="tit"><img src="img/3.png"></div>
+        <div class="tit"><img src="img/2.png"></div>
+    </div>
+    <main id="player">
+        <div class="level-continer">
+            <div class="but">
+                <div class="a" onclick="singleplay()">Sigle Player</div>
+            </div>
+            <div class="but">
+                <div class="a" onclick="multiplay()">Multi Player</div>
+            </div>
+
+        </div>
+    </main>
+    <main id="level" style="display: none;">
+        <div class="level-continer">
+            <div class="but">
+                <div class="a" onclick="begin()">Beginner</div>
+            </div>
+            <div class="but">
+                <div class="a" onclick="inter()">Intermidate</div>
+            </div>
+            <div class="but">
+                <div class="a" onclick="advence()">Advance</div>
+            </div>
+        </div>
+    </main>
+    <main id="game-place" style="display: none;">
+        <div class="container">
+            <div class="inner-continer">
+                <div class="c1">
+                    <div class="box" id="cell0"><img src="img/n.png" alt="" id="img0" onclick="play(this)"></div>
+                    <div class="box" id="cell1"><img src="img/n.png" alt="" id="img1" onclick="play(this)"></div>
+                    <div class="box" id="cell2"><img src="img/n.png" alt="" id="img2" onclick="play(this)"></div>
+                </div>
+                <div class="c2">
+                    <div class="box" id="cell3"><img src="img/n.png" alt="" id="img3" onclick="play(this)"></div>
+                    <div class="box" id="cell4"><img src="img/n.png" alt="" id="img4" onclick="play(this)"></div>
+                    <div class="box" id="cell5"><img src="img/n.png" alt="" id="img5" onclick="play(this)"></div>
+                </div>
+                <div class="c3">
+                    <div class="box" id="cell6"><img src="img/n.png" alt="" id="img6" onclick="play(this)"></div>
+                    <div class="box" id="cell7"><img src="img/n.png" alt="" id="img7" onclick="play(this)"></div>
+                    <div class="box" id="cell8"><img src="img/n.png" alt="" id="img8" onclick="play(this)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="but">
+            <div class="a" onclick="back_restart()">Main Menu</div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="closing">This Project Is Devlope By Satyam Dengre</div>
+</footer>
+
+</html>
