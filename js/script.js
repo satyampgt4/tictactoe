@@ -3,10 +3,12 @@ var board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 var n = 0;
 var w = 0;
 var level = 0;
-var player = 2;
+var player = 0;
 var mo = 1;
 
 function play(inpu) {
+    var z = "img" + inpu.id[4];
+    inpu = document.getElementById(z);
     console.log(inpu.src);
     if (player == 1) {
         console.log(inpu.src);
@@ -36,9 +38,9 @@ function play(inpu) {
                     document.getElementById(i).src = "https://satyampgt4.github.io/tictactoe/img/o.png";
                 }
                 setTimeout(result, 200);
-                
+
             }
-            
+
         }
 
         else
